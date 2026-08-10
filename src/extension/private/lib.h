@@ -19,8 +19,8 @@
 
 namespace camilib {
 
-    class NNode : public godot::Node {
-        GDCLASS(NNode, godot::Node)
+class NNode : public godot::Node {
+    GDCLASS(NNode, godot::Node)
 
     protected:
         static void _bind_methods();
