@@ -5,6 +5,18 @@
 
 #include <godot_cpp/classes/node.hpp>
 
+// You can do nested namespace like so:
+// namespace godot {
+// namespace camilib {
+//
+//  }
+// }
+
+// Or you can just prefix the class with the namespace that it is within. Like below:
+// godot::Node
+
+// NEVER use using namespace [NamespaceName] inside a header file!
+
 namespace camilib {
 
     class NNode : public godot::Node {
