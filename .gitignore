@@ -1,0 +1,42 @@
+
+# Godot Engine Temp & Cache Files
+
+.godot/
+*.uid
+.import/
+export_presets.cfg
+
+# C++ / SCons / GDExtension Build Artifacts
+
+godot_project/bin/*.dll
+godot_project/bin/*.so
+godot_project/bin/*.dylib
+godot_project/bin/*.pdb
+godot_project/bin/*.exp
+godot_project/bin/*.lib
+
+bin/
+project/bin/windows/
+project/bin/linux/
+project/bin/macos/
+
+# Ignore SCons cache and local build objects
+src/.sconsign.dblite
+src/**/*.o
+src/**/*.os
+src/**/*.obj
+
+# C# Build Artifacts
+.mono/
+[Dd]ebug/
+[Rr]elease/
+binstres/
+obj/
+*.suo
+*.user
+*.sln
+*.csproj
+
+# VS Code & Local IDE Settings
+.vscode/.history/
+.vscode/project.xcworkspace/

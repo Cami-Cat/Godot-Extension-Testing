@@ -1,0 +1,48 @@
+{
+    "folders": [
+        {
+            "name": "Root",
+            "path": "."
+        },
+        {
+            "name": "C++",
+            "path": "src"
+        },
+        {
+            "name": "Godot Engine",
+            "path": "project"
+        }
+    ],
+    "settings": {
+        "godotTools.editorPath.godot4": "C:/Path/To/Your/Godot_v4.x.exe",
+        "files.exclude": {
+            "**/.sconsign.dblite": true,
+            "**/*.o": true,
+            "**/*.os": true,
+            "**/*.obj": true
+        }
+    },
+    "tasks": {
+        "version": "0.0.1",
+        "tasks": [
+            {
+                "label": "Build GDExtension (Debug)",
+                "type": "shell",
+                "command": "scons",
+                "args": [
+                    "platform=windows",
+                    "target=template_debug",
+                    "dev_build=yes"
+                ],
+                "options": {
+                    "cwd": "${workspaceRoot}"
+                },
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": "$msCompile"
+            }
+        ]
+    }
+}
